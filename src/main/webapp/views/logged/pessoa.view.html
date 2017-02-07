@@ -5,7 +5,7 @@
 </div> 
 <div data-component="crn-button" id="crn-button-564202"> 
   <button class="btn btn-primary" type="submit" onclick="" ng-click="Pessoa.startInserting()" ng-hide="Pessoa.inserting || Pessoa.editing"><i class="fa fa-user"></i> <span content="{{&quot;template.crud.new&quot; | translate}}">{{"template.crud.new" | translate}}</span></button> 
-<button class="btn btn-default btn-warning" type="button" ng-click="mostrarQuantidadeAdultos($event)">Quantidade de Adultos</button></div> 
+<button class="btn btn-default btn-warning" type="button" ng-click="mostrarQuantidadeAdultos($event)" ng-hide="Pessoa.inserting || Pessoa.editing">Quantidade de Adultos</button></div> 
 <div class="component-holder" data-component="crn-grid" id="crn-grid-Pessoa"> 
   <div crn-datasource="Pessoa" ng-hide="Pessoa.editing || Pessoa.inserting"> 
     <table class="table  table-bordered table-hover table-striped"> 
