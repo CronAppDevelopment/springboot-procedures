@@ -1,0 +1,7 @@
+DELIMITER $$
+
+CREATE PROCEDURE SP_Selecionar_Pessoas_Adultas()
+BEGIN
+	SELECT * FROM PESSOA WHERE (YEAR(NOW()) - YEAR(nascimento)) >= 18 ;
+END $$
+DELIMITER ;
