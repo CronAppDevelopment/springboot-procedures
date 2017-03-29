@@ -1,5 +1,5 @@
 DELIMITER $$
-!-- Teste de pull 
+!-- Teste de pull - 2 
 CREATE PROCEDURE SP_Selecionar_Pessoas_Adultas()
 BEGIN
 	SELECT * FROM PESSOA WHERE (YEAR(NOW()) - YEAR(nascimento)) >= 18 ;
